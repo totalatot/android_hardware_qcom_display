@@ -21,8 +21,6 @@ LOCAL_COPY_HEADERS            := copybit.h copybit_priv.h c2d2.h
 include $(BUILD_COPY_HEADERS)
 
 include $(CLEAR_VARS)
-# b/24171136 many files not compiling with clang/llvm yet
-LOCAL_CLANG := false
 
 LOCAL_MODULE                  := copybit.$(TARGET_BOARD_PLATFORM)
 LOCAL_LICENSE_KINDS           := SPDX-license-identifier-Apache-2.0 SPDX-license-identifier-BSD legacy_not_a_contribution

@@ -2,9 +2,6 @@ LOCAL_PATH := $(call my-dir)
 include $(LOCAL_PATH)/../common.mk
 include $(CLEAR_VARS)
 
-# b/24171136 many files not compiling with clang/llvm yet
-LOCAL_CLANG := false
-
 LOCAL_MODULE                  := libqservice
 LOCAL_LICENSE_KINDS           := SPDX-license-identifier-Apache-2.0 SPDX-license-identifier-BSD legacy_not_a_contribution
 LOCAL_LICENSE_CONDITIONS      := by_exception_only not_allowed notice
