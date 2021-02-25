@@ -3,6 +3,7 @@ include $(LOCAL_PATH)/../common.mk
 include $(CLEAR_VARS)
 
 LOCAL_MODULE                  := libqdutils
+LOCAL_PROPRIETARY_MODULE      := true
 LOCAL_LICENSE_KINDS           := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS      := notice
 LOCAL_MODULE_TAGS             := optional
@@ -31,6 +32,7 @@ LOCAL_CFLAGS                    := $(common_flags)
 LOCAL_CFLAGS                    += -DLOG_TAG=\"DisplayMetaData\" -Wno-sign-conversion
 LOCAL_MODULE_TAGS               := optional
 LOCAL_MODULE                    := libqdMetaData
+LOCAL_PROPRIETARY_MODULE      := true
 LOCAL_LICENSE_KINDS             := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS        := notice
 include $(BUILD_SHARED_LIBRARY)
