@@ -6,6 +6,7 @@ LOCAL_MODULE                  := liboverlay
 LOCAL_LICENSE_KINDS           := SPDX-license-identifier-Apache-2.0 SPDX-license-identifier-BSD legacy_not_a_contribution
 LOCAL_LICENSE_CONDITIONS      := by_exception_only not_allowed notice
 LOCAL_MODULE_TAGS             := optional
+LOCAL_VENDOR_MODULE           := true
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdutils libmemalloc \
                                  libsync libdl
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdoverlay\" -Wno-sign-conversion

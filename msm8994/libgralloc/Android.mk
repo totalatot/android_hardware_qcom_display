@@ -25,7 +25,7 @@ LOCAL_NOTICE_FILE             := $(LOCAL_PATH)/NOTICE
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_PROPRIETARY_MODULE      := true
 LOCAL_MODULE_TAGS             := optional
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libmemalloc libqdMetaData
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libmemalloc libqdMetaData libhardware
 LOCAL_SHARED_LIBRARIES        += libGLESv1_CM libqdutils
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdgralloc\" -Wno-sign-conversion
 LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
@@ -49,7 +49,7 @@ LOCAL_LICENSE_KINDS           := SPDX-license-identifier-Apache-2.0 SPDX-license
 LOCAL_LICENSE_CONDITIONS      := notice
 LOCAL_NOTICE_FILE             := $(LOCAL_PATH)/NOTICE
 LOCAL_MODULE_TAGS             := optional
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdutils libdl
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdutils libdl libhardware
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdmemalloc\" -Wno-sign-conversion -Wno-unused-value
 LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
 LOCAL_SRC_FILES               := ionalloc.cpp alloc_controller.cpp

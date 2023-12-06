@@ -7,8 +7,8 @@ LOCAL_PROPRIETARY_MODULE      := true
 LOCAL_LICENSE_KINDS           := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS      := notice
 LOCAL_MODULE_TAGS             := optional
-LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libui libbinder libqservice
+LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers libutils_headers
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libui libbinder libqservice libhardware libutils
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdutils\" -Wno-sign-conversion -Wno-float-conversion
 LOCAL_SRC_FILES               := profiler.cpp mdp_version.cpp \
                                  idle_invalidator.cpp \
@@ -20,7 +20,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_HEADER_LIBRARIES        := display_headers generated_kernel_headers
-LOCAL_SHARED_LIBRARIES          := liblog libcutils
+LOCAL_SHARED_LIBRARIES          := liblog libcutils libhardware libutils
 LOCAL_SRC_FILES                 := qdMetaData.cpp
 LOCAL_CFLAGS                    := $(common_flags)
 LOCAL_CFLAGS                    += -DLOG_TAG=\"DisplayMetaData\" -Wno-sign-conversion
