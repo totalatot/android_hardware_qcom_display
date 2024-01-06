@@ -31,6 +31,7 @@
 #include <IQService.h>
 #include <hwc_utils.h>
 #include <mdp_version.h>
+#include <binder/Parcel.h>
 
 #define QCLIENT_DEBUG 0
 
