@@ -37,6 +37,8 @@
 #include <display_config.h>
 #include <dlfcn.h>
 
+#include <binder/Parcel.h>
+
 #define QCLIENT_DEBUG 0
 
 using namespace android;
