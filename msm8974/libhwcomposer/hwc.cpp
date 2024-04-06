@@ -716,7 +716,7 @@ void hwc_dump(struct hwc_composer_device_1* dev, char *buff, int buff_len)
         dumpsys_log(aBuf, ovDump);
         ovDump[0] = '\0';
     }
-    strlcpy(buff, aBuf.string(), buff_len);
+    strlcpy(buff, aBuf.c_str(), buff_len);
 }
 
 static int hwc_device_close(struct hw_device_t *dev)
