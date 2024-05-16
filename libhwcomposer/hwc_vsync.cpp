@@ -19,7 +19,6 @@
  */
 
 #include <cutils/properties.h>
-#include <bfqio/bfqio.h>
 #include <utils/Log.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
